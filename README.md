@@ -46,6 +46,7 @@ MCP SuperAssistant is a Chrome extension that integrates the Model Context Proto
 - [DeepSeek](https://chat.deepseek.com/)
 - [Kagi](https://kagi.com/assistant)
 - [T3 Chat](https://t3.chat/)
+- [You.com](https://you.com/)
 
 
 ## Demo Video

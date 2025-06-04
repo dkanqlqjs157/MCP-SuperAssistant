@@ -42,6 +42,7 @@ const manifest = {
     '*://*.chat.deepseek.com/*',
     '*://*.kagi.com/*',
     '*://*.t3.chat/*',
+    '*://*.you.com/*',
   ],
 
   permissions: ['storage', 'clipboardWrite'],
@@ -123,6 +124,12 @@ const manifest = {
     // Specific content script for T3 Chat tool call parsing
     {
       matches: ['*://*.t3.chat/*'],
+      js: ['content/index.iife.js'],
+      run_at: 'document_idle',
+    },
+    // Specific content script for You.com tool call parsing
+    {
+      matches: ['*://*.you.com/*'],
       js: ['content/index.iife.js'],
       run_at: 'document_idle',
     },
