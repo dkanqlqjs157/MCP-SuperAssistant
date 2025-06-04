@@ -26,6 +26,7 @@ export class SidebarManager extends BaseSidebarManager {
   private static deepseekInstance: SidebarManager | null = null;
   private static kagiInstance: SidebarManager | null = null;
   private static t3chatInstance: SidebarManager | null = null;
+  private static youcomInstance: SidebarManager | null = null;
   private lastToolOutputsHash: string = '';
   private lastMcpToolsHash: string = '';
   private isFirstLoad: boolean = true;
@@ -100,6 +101,11 @@ export class SidebarManager extends BaseSidebarManager {
           SidebarManager.t3chatInstance = new SidebarManager(siteType);
         }
         return SidebarManager.t3chatInstance;
+      case 'youcom':
+        if (!SidebarManager.youcomInstance) {
+          SidebarManager.youcomInstance = new SidebarManager(siteType);
+        }
+        return SidebarManager.youcomInstance;
       default:
         // For any unexpected site type, create and return a new instance
         logMessage(`Creating new SidebarManager for unknown site type: ${siteType}`);

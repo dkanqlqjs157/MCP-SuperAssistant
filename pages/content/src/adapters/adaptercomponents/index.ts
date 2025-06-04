@@ -30,6 +30,9 @@ export { initKagiComponents } from './kagi';
 // Export T3 Chat components initializer
 export { initT3ChatComponents } from './t3chat';
 
+// Export You.com components initializer
+export { initYoucomComponents } from './you';
+
 // Note: Functions like insertToggleButtons, handleAutoInsert, handleAutoSubmit
 // are now part of the common framework and are not directly exported per adapter.
 // The initialization functions configure and start the common framework for each site.

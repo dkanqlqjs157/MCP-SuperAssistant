@@ -22,7 +22,8 @@ export type SiteType =
   | 'openrouter'
   | 'deepseek'
   | 'kagi'
-  | 't3chat';
+  | 't3chat'
+  | 'youcom';
 
 /**
  * BaseSidebarManager is a base class for creating sidebar managers
